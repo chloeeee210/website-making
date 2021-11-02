@@ -1,0 +1,92 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+.footer_common{
+    position: absolute;
+    background-color:#000000;
+    color: white;
+    white-space: nowrap;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    margin: 0;
+    /* justify-content: flex-end; */
+    top: 6228px;
+    left: 0px;
+    width: 1920px;
+    height: 80px;
+}
+.company_name{
+    font-size: 16px;
+    padding-right: 10px;
+    
+}
+.email{
+    font-size: 11px;
+}
+
+/* footer{
+    background-color: #000000;
+    position: absolute;
+    top: 6228px;
+    left: 0px;
+    width: 1920px;
+    height: 80px;
+    z-index: 0;
+    display : flex;
+    font-family: 'NanumSquare', sans-serif;
+    line-height: 80px;
+    text-align: right;
+}
+.company_name{
+    background-color: #000000;
+    position: absolute;
+    top: 6259px;
+    margin-left: 1382px;
+    width: 122px;
+    height: 18px;
+    text-align: center;    
+    color: #ffffff;
+    font-display: flex;
+    white-space: nowrap;
+    display:flex;
+    /* text-align: right; */
+
+    /* align-items:center; */
+    /* z-index:6; */
+    /* line-height: 80px; 
+}*/
+    
+.company_name h1{
+    font-size: 16px;
+
+}
+.e-mail_adress{
+    background-color: #000000;
+
+    position: absolute;
+    top: 6262px;
+    left: 1522px;
+    width: 254px;
+    height: 12px;
+    font-size: 11px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    /* text-align: center;     */
+    color: #ffffff;
+    /* font-display: flex; */
+    /* z-index: 6; */
+    /* line-height: 80px; */
+    
+} 
+
+/* .item{
+    width:260px;
+    height:120px;
+    display:flex;
+    align-items:center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 24px;
+    color:white;
+    text-align: center;
+} */ 

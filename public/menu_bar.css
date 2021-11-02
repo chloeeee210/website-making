@@ -1,0 +1,186 @@
+.navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: rgb(0, 0, 0);
+    /* padding:8px 12px; */
+    width: 1920px;
+    height:120px;
+    position:fixed;
+    z-index:4;
+    margin-top: 0;
+}
+
+title{
+    width:260px;
+    height:120px;
+    font-size: 21px;
+    position:absolute;
+    z-index:5;
+    
+}
+
+.navbar_logo{
+    position:ablosute;
+    z-index:5;
+}
+
+#logo{
+    width:260px;
+    height:120px;
+    display:flex;
+    align-items:center;
+    font-family: 'NanumSquare', sans-serif;
+    color:white;
+    justify-content: left;
+    padding-left: 28px;
+
+}
+
+#logo h1{
+    font-size:40px;
+    margin-bottom:8px;
+    margin-top:0;
+
+}
+
+#logo h2{
+    font-size:16px;
+    margin:0;
+
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar_menu{
+    display:flex;
+    list-style: none;
+}
+
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.item{
+    width: 260px;
+    height: 120px;
+    display:flex;
+    align-items:center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 24px;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+.item:nth-child(1){
+    top: 0px;
+    left: 278px;
+    width: 260px;
+    height: 120px;
+}
+.item:nth-child(2){
+    top: 0px;
+    left: 570px;
+    width: 260px;
+    height: 120px;
+}
+
+.item:nth-child(3){
+    top: 0px;
+    left: 846px;
+    width: 260px;
+    height: 120px;
+}
+.item:nth-child(4){
+    top: 0px;
+    left: 1122px;
+    width: 260px;
+    height: 120px;
+}
+.item:nth-child(5){
+    top: 0px;
+    left: 1396px;
+    width: 260px;
+    height: 120px;
+}
+/* .item:hover{
+    
+} */
+/* 글씨 보라색으로 변하는 부분 */
+/* 폰트 색 #7333FF로 설정할 시 가독성 떨어져서 조금 밝게 수정함. */
+.item:hover{
+    color: #8a5ee2;
+    transition: all 0.1s ease-in-out;
+}
+.item:nth-child(1):hover::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    /* left: 330px; */
+    width: 260px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    border-bottom: 8px solid #7333FF;
+}
+.item:nth-child(2):hover::after {
+    content: '';
+    position: absolute;
+    top: 112px;
+    /* left: 596px; */
+    width: 260px;
+    height: 8px;
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    border-bottom: 8px solid #7333FF;
+}
+
+.item:nth-child(3):hover::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    /* left: 856px; */
+    width: 260px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    border-bottom: 8px solid #7333FF;
+}
+.item:nth-child(4):hover::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    /* left: 1116px; */
+    width: 260px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    border-bottom: 8px solid #7333FF;
+}
+.item:nth-child(5):hover::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    /* left: 1376px; */
+    width: 260px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    margin-top: -8px;
+    border-bottom: 8px solid #7333FF;
+}
+
+/* body{
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1490px;
+    margin:0;
+} */

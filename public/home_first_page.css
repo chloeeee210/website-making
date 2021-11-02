@@ -1,0 +1,255 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+body{
+    margin:0;
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 6309px;
+    position: absolute;
+    /* 실수로 지웠을 때 폰트 날라가게 하는거 방지용 */
+    font-family: 'NanumSquare', sans-serif;
+
+
+}
+#side_bar_line{
+    position:fixed;
+    top: 187px;
+    left: 57.3px;
+    width: 0px;
+    height: 180px;
+    border: 1px solid #BDBDBD;
+    background-color: #BDBDBD;
+    z-index: 5;  
+
+    
+}
+.circle {
+    position: fixed;
+    /* top: 180px;
+    left: 50px; */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #BDBDBD;
+    top: 180px;
+    left: 50px;
+    z-index: 5;  
+
+
+}
+
+.circle--second{
+    margin-top: 60px;
+
+}
+.circle--third {
+    margin-top: 120px;
+}
+
+.circle--fourth {
+    margin-top: 180px;
+}
+
+
+/* .third_circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #BDBDBD;
+    top: 301px;
+    left: 50px;
+    width: 16px;
+    height: 16px;
+}
+
+.fourth_circle{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #BDBDBD;
+    top: 360px;
+    left: 50px;
+    width: 16px;
+    height: 16px;     
+} */
+
+/* circle hover */
+/* .circle:hover,.circle--second,.circle--third,.circle--fourth {
+    background-color: #7332FF;
+    /* 변화 줄 property value 천천히 */
+    /* property에 background-color를 입력하면 transition이 적용되지 않아서 all로 작성함 */
+    /*transition: all 0.1s ease-in-out;
+} */
+
+/* .circle--second:hover  {
+    background-color: #7332FF;
+    transition: all 0.1s ease-in-out;
+}
+
+.third_circle:hover  {
+    background-color: #7332FF;
+    transition:all 0.1s ease-in-out;
+}
+
+.fourth_circle:hover  {
+    background-color: #7332FF;
+    transition: all 0.1s ease-in-out;
+} */
+
+/* 좌측 사이드 바 목차 텍스트 */
+.circle_content{
+    position:fixed;
+    top: 180px;
+    left: 80px;
+    white-space: nowrap;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    line-height: 17px;
+    color:#BDBDBD;
+    font-weight: 600;
+    z-index: 5;  
+}
+
+.circle_content--second{
+    top: 241px;
+    left: 80px;
+    width: 63px;
+    height: 17px;
+    
+}
+
+.circle_content--third{
+    top: 301px;
+    left: 80px;
+    width: 72px;
+    height: 17px;
+    
+}
+.circle_content--fourth{
+    top: 357px;
+    left: 80px;
+    width: 88px;
+    height: 42px;
+    
+}
+
+.circle:hover {
+    background-color: #7332FF;
+    /* 변화 줄 property value 천천히 */
+    /* property에 background-color를 입력하면 transition이 적용되지 않아서 all로 작성함 */
+    transition: all 0.1s ease-in-out;
+}
+.circle_content:hover{
+    color: #7332FF;
+    transition: all 0.1s ease-in-out;
+
+}
+
+
+/* .second_circle_content{
+    position:absolute;
+    white-space: nowrap;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    line-height: 17px;
+    color:#525252;
+    font-weight: bold;
+
+
+}
+.third_circle_content{
+    position:absolute;
+    top: 301px;
+    left: 80px;
+    width: 72px;
+    height: 17px;
+    white-space: nowrap;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    line-height: 17px;
+    color:#525252;
+    font-weight: bold;
+
+
+}
+.fourth_circle_content{
+    position:absolute;
+    top: 357px;
+    left: 80px;
+    width: 88px;
+    height: 42px;
+    white-space: nowrap;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    line-height: 17px;
+    color:#525252;
+    font-weight: bold;
+} */
+
+
+/* .second_circle_content:hover  {
+    color: #7332FF;
+    transition: all 0.1s ease-in-out;
+} */
+
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+head{
+    font-family: 'NanumSquare', sans-serif;
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.first_page_title_detail{
+    width: 221px;
+    height: 59px;
+    text-align:center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 26px;
+    border-radius: 30px;
+    background-color: #7332FF;
+    color:white;
+    padding:0px;
+    line-height: 10px;
+    position:absolute;
+    top: 655px;
+    left: 227px;
+    
+
+}
+/* @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css); */
+.first_page_title{
+    font-family: 'NanumSquare', sans-serif;
+    text-align:left;
+    background-color: #ffffff;
+}
+
+.first_page_title h1{
+    /* background-color: aqua; */
+    position:absolute;
+    top: 413px;
+    left: 227px;
+    font-size: 80px;
+    width:336px;
+    height:88px;
+    padding:0px;
+    font-weight: 800;
+}
+.first_page_title h2{
+    position:absolute;
+    font-size: 40px;
+    top: 537px;
+    left: 227px;
+    width: 364px;
+    height: 53px;
+    font-weight:bold;
+
+}
+#first_page_bg_img{
+    position:absolute;
+    z-index: 0;
+    top: 210px;
+    left: 592px;
+    width: 1387px;
+    height: 1178px;
+}
