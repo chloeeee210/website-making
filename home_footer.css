@@ -1,0 +1,60 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    
+} */
+.footer_common{
+    margin: 0 auto;
+    position: absolute;
+    background-color:#000000;
+    color: white;
+    white-space: nowrap;
+    top: 6228px;
+    width: 100%;
+    min-width: 1920px;
+    display: flex; 
+    min-height: 80px; 
+    flex-direction:row;
+    /*margin-top: auto;
+     text-align: center; */
+    align-items:center;
+   justify-content: flex-end;
+
+}
+#company_name{
+    font-size: 16px;
+    padding-right: 10px;
+    
+}
+#email_adress{
+    font-size: 11px;
+    padding-right:144px;
+}
+    
+@media screen and (max-width: 768px){
+    
+    .footer_common{
+        justify-content: center;
+        min-height: 17.2224px;
+
+        background-color: #000000;
+
+    }
+    #company_name{
+        font-size: 3.45px;
+        padding: 17.2224444px;
+        
+    }
+    #email_adress{
+        font-size: 2.371875px;
+        padding: 0px;
+    }
+
+
+
+
+}

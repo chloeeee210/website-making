@@ -1,0 +1,592 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+body{
+    margin:0;
+
+    font-family: 'NanumSquare', sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height:auto;
+
+}
+/* 좌측사이드바구현부 */
+
+.circle {
+   /* position: fixed; */
+     top: calc (180px / 1920 * 100);
+    left: 2.60416666666667vw;
+    width: 0.83333333333333vw;
+    height: 0.83333333333333vw;
+    border-radius: 50%;
+    background-color: #BDBDBD;
+
+    z-index: 5;  
+    margin :  1.83333333333333vw 0;
+
+
+}
+/* 
+.circle--second{
+    margin-top: 3.125vw;
+
+}
+.circle--third {
+    margin-top: 6.25vw;
+}
+
+.circle--fourth {
+    margin-top: 9.375vw;
+} */
+
+.circle_list{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+
+.circle_content_list{
+    flex-wrap: wrap;
+}
+/* 좌측 사이드 바 목차 텍스트 */
+.circle_content{
+    left: 4.16666666666667vw;
+    white-space: wrap;
+    color:#BDBDBD;
+    font-weight: 600;
+    z-index: 5;
+    font-size: 0.83333333333333vw;
+    padding: 1.83333333333333vw 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle_content--second{
+    padding: 1.83333333333333vw 0;
+
+}
+
+.circle_content--third{
+    padding: 1.83333333333333vw 0;
+
+    
+}
+.circle_content--fourth{
+    padding: 1.83333333333333vw 0;
+    width:7.14583333333333vw;
+
+}
+
+.circle:hover {
+    background-color: #7332FF;
+    /* 변화 줄 property value 천천히 */
+    /* property에 background-color를 입력하면 transition이 적용되지 않아서 all로 작성함 */
+    transition: all 0.1s ease-in-out;
+}
+.circle_content:hover{
+    color: #7332FF;
+    transition: all 0.1s ease-in-out;
+
+}
+
+#side_bar_line{
+    /* position:fixed; */
+    top: 9.73958333333333vw;
+    left: 2.984375vw;
+    width: 0px;
+    height: 9.375vw;
+    border: 1px solid #BDBDBD;
+    background-color: #BDBDBD;
+    z-index: 5;
+    
+    
+}
+
+.side_bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: flex-start;
+    flex-basis: 100%;
+     flex-wrap: wrap;
+
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.first_page{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#first_page_text_content{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top:19%;
+    margin-left:-12vw;
+}
+
+#first_page_wrapper{
+    margin-top: -10.9375vw;
+    margin-left:30.83333333333333vw;
+    background-image: url('img/im_bg1.svg');
+    background-repeat: no-repeat;
+    background-size: 61.35416666666667vw 72.23958333333333vw;
+    background-color: #43aac9;
+    height: 72.708333vw;
+    width: 76.3020vw;
+    padding-top: calc ( 1178 / 1387 * 100% ) ; 
+    /* calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    /* padding:100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    
+}
+
+
+
+
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+head{
+    font-family: 'NanumSquare', sans-serif;
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.first_page_title_detail{
+
+    text-align:center;
+    vertical-align: center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 1.3vw;
+    border-radius: 30px;
+    background-color: #7332FF;
+    color:white;
+    padding:0.6vw 1.2vw;
+}
+
+    
+
+.first_page_title h1{
+
+    font-family: 'NanumSquare', sans-serif;
+    white-space: nowrap;
+    font-weight: 800;
+        font-size: 4.1vw;
+
+}
+
+
+.first_page_title h2{
+    font-size: 2.05vw;
+    font-weight:bold;
+
+}
+
+.second_page{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6%;
+    background-color: antiquewhite;
+    opacity: 1;
+
+}
+
+#second_page_text_content{
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 58.3332696242739%;
+    padding-top:19%;
+}
+
+#second_page_wrapper{
+    margin-top: -12%;
+    background-image: url('img/im_bg2.svg');
+    background-repeat: no-repeat;
+    background-size: 72.708333vw 76.3020vw;
+    height: 72.708333vw;
+    width: 76.3020vw;
+    padding-top: calc ( 1465 / 1396 * 100% ) ; 
+    /* calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    
+}
+
+
+
+#second_page_text_content{
+    white-space: nowrap;
+}
+.second_page_title h1{
+    font-size: 4.1vw;
+    font-weight: 800;
+    padding: 0%;
+
+}
+
+.second_page_content h2{
+    font-size: 1.6vw;
+    padding: 0%;
+    color: #525252;
+
+}
+
+.second_page_content h3{
+
+    color:#525252;
+    font-size: 1.0416vw;
+    padding: 0%;
+    word-break : keep-all;
+    
+
+}
+/* 3rd page */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.third_page{
+    font-family: 'NanumSquare', sans-serif;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+
+#third_page_wrapper{
+    /* margin-top: -12%; */
+    background-image: url('img/im_bg3.svg');
+    background-repeat: no-repeat;
+    background-size: 72.708333vw 76.3020vw;
+    height: 72.708333vw;
+    width: 76.3020vw;
+    margin-left: 13.697916vw;
+    margin-top: -26%;
+    padding-top: calc ( 1244 /1477 * 100% ) ; 
+    /* calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+.third_page_text_content{
+    font-size: 1.6vw;
+    padding: 57.80767637102234%;
+    white-space: nowrap;
+    margin-top: -33%;
+}
+
+#third_page_line_img{
+    width:51.11458333333333vw;
+    height:31.64583333333333vw;
+    background-size: 31.64583333333333vw 51.11458333333333vw;
+    margin-left:31.333vw;
+    margin-top: -35.68643vw;
+    padding-top: calc ( 646 /1039 * 100% ) ;
+}
+
+
+#third_page_title h1{
+
+    font-size: 4.1vw;
+    font-weight: 800;
+
+}
+#third_page_content h2{
+    font-size: 1.6vw;
+}
+     
+
+
+
+
+
+/* 4th page */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.fourth_page{
+    font-family: 'NanumSquare', sans-serif;    
+}
+#fourth_page_line_img{
+    position:absolute;
+    top: 3591px;
+    left: 184px;
+    width: 1739px;
+    height: 23px;
+    z-index: 0;
+}
+
+#fourth_page_bg_img{
+    height:0;
+    background-image: url('img/im_bg4.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top:84.22477%;
+    z-index: 0;
+}
+
+#vary_of_developer h1{
+    position:absolute;
+    top: 3496px;
+    left: 280px;
+    width: 384px;
+    height: 88px;
+    font-size: 4.1vw;
+    font-weight: 800;
+    z-index: 1;
+    margin-top: 0;
+    margin-left: 0;
+
+}
+#fourth_page_box_img{
+    position: absolute;
+    top: 3544px;
+    left: 1060px;
+    width: 117px;
+    height: 117px;   
+}
+#category_network {
+    position:absolute;
+    top: 4207px;
+    left: 280px;
+    width: 255px;
+    height: 35px;
+    font-size: 32px;
+    font-weight: 800;
+
+}
+#category_ERP {
+    position:absolute;
+    top: 4747px;
+    left: 280px;
+    width: 284px;
+    height: 35px;
+    font-size: 32px;
+    font-weight: 800;
+    white-space: nowrap;
+
+}
+.button{
+    position: absolute;
+    font-size: 27px;
+    border-radius: 30px;
+    background-color:#7332FF;
+    color: white;
+    /* line-height: 53px; */
+    white-space: nowrap;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    margin: 0;
+    left: 275px;
+    justify-content: center;
+    height: 53px;
+    font-weight: 550;
+}
+.button:nth-of-type(1){
+    top: 3641px;
+    width: 196px;
+}
+
+.button:nth-of-type(2){
+    top: 3790px;
+    width: 222px;
+}
+.button:nth-of-type(3){
+    top: 3949px;
+    width: 248px;
+}
+.button:nth-of-type(4){
+    top: 4064px;
+    width: 260px;
+}
+.button:nth-of-type(5){
+    top: 4265px;
+    width: 91px;
+}
+.button:nth-of-type(6){
+    top: 4382px;
+    width: 147px;
+}
+.button:nth-of-type(7){
+    top: 4581px;
+    width: 99px;
+}
+.button:nth-of-type(8){
+    top: 4811px;
+    width: 147px;
+
+}
+.button:nth-of-type(9){
+    top: 4945px;
+    width: 74px;
+}
+
+.button_explain{
+    position: absolute;
+    color: #525252;
+    font-size: 20px;    
+    white-space: nowrap;
+}
+.button_explain:nth-of-type(1){
+    top: 3710px;
+    left: 280px;
+    width: 699px;
+    height: 70px;    
+}
+
+.button_explain:nth-of-type(2){
+    top: 3860px;
+    left: 280px;
+    width: 727px;
+    height: 69px;
+}
+.button_explain:nth-of-type(3){
+    top: 4018px;
+    left: 280px;
+    width: 540px;
+    height: 22px;    
+}
+.button_explain:nth-of-type(4){
+    top: 4127px;
+    left: 277px;
+    width: 366px;
+    height: 22px;
+        
+}
+.button_explain:nth-of-type(5){
+    top: 4334px;
+    left: 280px;
+    width: 453px;
+    height: 22px;    
+}
+.button_explain:nth-of-type(6){
+    top: 4450px;
+    left: 280px;
+    width: 740px;
+    height: 109px;
+        
+}
+.button_explain:nth-of-type(7){
+    top: 4650px;
+    left: 280px;
+    width: 472px;
+    height: 22px;
+        
+}
+.button_explain:nth-of-type(8){
+    top: 4880px;
+    left: 285px;
+    width: 324px;
+    height: 22px;
+        
+}
+.button_explain:nth-of-type(9){
+    top: 5014px;
+    left: 280px;
+    width: 682px;
+    height: 22px;    
+}
+
+/* 5th page */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.fifth_page{
+    font-family: 'NanumSquare', sans-serif;
+}
+
+
+#fifth_page_wrapper{
+    position:relative;
+    /* margin-top: -12%; */
+    background-image: url('img/im_bg5.png');
+    background-repeat: no-repeat;
+    background-size:  100vw 56.40625vw;
+    height: 56.40625vw;
+    width: 100vw;
+    opacity: 1;
+    padding-top: calc ( 1083 /1920 * 100% ) ; 
+    /* calc (이미지 높이 ÷ 이미지 가로 × 100 %) */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+#fifth_page_wrapper::before{
+    content: "";
+    position: absolute;
+    background-color: #7432FF;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+
+}
+
+.fifth_page_text_content{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width : 100vw;
+    height:56.40624vw;
+    z-index: 2;
+
+}
+
+
+#fifth_page_title h1{
+
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 4.1vw;
+    font-weight: 800;
+    padding :  1.04166666666667vw 0;
+    margin:0;
+    
+}
+
+#fifth_page_title_explain{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.66666666666667vw;
+    padding-bottom: 2.65625vw;
+}
+#fifth_page_detail_explain{
+    font-size:1.04166666666667vw;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 20.57291666666667vw;
+
+}
+.fifth_page_footer {
+
+    font-size:1.04166666666667vw;
+    color: #FFFFFF;
+    justify-self: last baseline;
+    padding-bottom: 1.5625vw;
+}

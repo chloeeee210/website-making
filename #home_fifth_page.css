@@ -1,0 +1,79 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.fifth_page{
+    font-family: 'NanumSquare', sans-serif;
+}
+
+#fifth_page_bg_purple_img{
+    position:absolute;
+    top: 5150px;
+    left: 0px;
+    width: 1920px;
+    height: 1083px;
+    opacity: 1;
+    z-index: 2;
+}
+#fifth_page_bg_img{
+    position:absolute;
+    top: 5150px;
+    left: 0px;
+    width: 1920px;
+    height: 1083px;
+    opacity: 0.8;
+    z-index: 1;
+
+}
+#fifth_page_title{
+    position:absolute;
+    top: 5533px;
+    left: 574px;
+    width: 606px;
+    height: 88px;
+    font-size: 80px;
+    font-weight: 800;
+    z-index: 2;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    
+}
+
+#fifth_page_title_explain{
+    position:absolute;
+    top: 5641px;
+    left: 344px;
+    width: 1066px;
+    height: 35px;
+    font-size: 32px;
+    line-height: 35px;
+    z-index: 2;
+    color: #FFFFFF;
+    text-align: center;
+}
+#fifth_page_detail_explain{
+    margin-top: 31px;
+    position:absolute;
+    top: 5727px;
+    left: 563px;
+    width: 794px;
+    height: 55px;
+    font-size: 20px;
+    z-index: 2;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+.fifth_page_footer p{
+    position: absolute;
+    top: 6177px;
+    left: 795px;
+    width: 330px;
+    height: 22px;
+    font-size: 20px;
+    z-index: 2;
+    color: #FFFFFF;
+
+}
+
+
