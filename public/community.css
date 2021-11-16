@@ -1,0 +1,589 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F4;
+    margin:0;
+    overflow-x: hidden;
+    /* border: #7332FF 3px solid; */
+    height:auto;
+    /* min-height: 52vw; */
+    /* height:auto; */
+}
+
+
+.content_box{
+    background-color: #F4F4F4;
+    /* max-width:1657px; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: flex-start;
+    Width:86%;
+
+}
+
+
+.academy_list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    overflow-wrap: wrap;
+    padding:0;
+}
+.academy_list_item{
+    margin: 4px;
+    width:fit-content;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: stretch;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    /* flex-basis: 7%; */
+
+
+}
+
+.academy_image{
+    vertical-align: top;
+    /* flex:auto; */
+
+}
+.title{
+    
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 800;
+    color:#000000;
+
+}
+#term{
+    flex-basis: 40px;
+    flex-grow:1;
+    font-size: 16px;
+    color: #424242;
+    /* order:1; */
+
+
+}
+
+#toggle_button{
+    background-color: transparent;
+    border:none;
+    width:36px;
+    height: 36px;
+    cursor: pointer;
+    /* background-color: aquamarine; */
+    padding: 0%;
+    margin-left: 57px;
+    transform: rotate( 180deg );
+}
+
+.short_content{
+    display:flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: center;
+}
+.short_content{
+ 
+    font-display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.price{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    min-width: 141px;
+    flex-basis:40px;
+    flex-grow:1;
+
+}
+#normal_price{
+    color:#949494;
+}
+#dicount_price{
+    color:#000000;
+}
+.detail_content{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin : 15px;
+    padding: 0px;
+    color: #616161;
+}
+strong{
+    color:#000000;
+
+
+}
+.contour_line{
+    border: 1px solid #E0E0E0;
+    background-color: #E0E0E0;
+    position: relative;
+    width: 240px;
+    margin-bottom: 17px;
+
+}
+.sub_content{
+    list-style:none;
+    padding-left:0px;
+    padding-bottom: 18px;
+    flex-basis: 40%;
+    order:1;
+    text-align: left;
+    word-break: keep-all;
+}
+.non_margin_padding{
+    text-decoration: none;
+    margin:0;
+    padding:0;
+}
+
+.detail_content{
+    display: flex;
+    flex-direction: row;
+    min-width: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    align-items: flex-start;
+}
+.detail_content_subtitle{
+display:flex;
+flex-direction: column;
+flex-wrap: wrap;
+padding-right:21px;
+/* 추가한부분 */
+justify-content: space-around;
+
+padding-left: 0;
+font-size: 14px;
+color: #000000;
+font-weight: 800;
+flex-basis:40px;
+flex-grow:1;
+
+
+
+}
+
+.detail_content_describe{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0;
+    max-width: 140px;
+    font-size: 14px;
+
+
+}
+.short_content_wrapper{
+    padding-top:8px;
+
+}
+
+.category_bar{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    background-color: #ffffff;
+    width: 86.302vw;
+    /* height: 6.0909vw; */
+    /* min-height: 79px; */
+    max-width: 1920px;
+    z-index:0;
+    margin-top: 1.2336vw;
+    padding:24px 0;
+
+}
+/* categorybar CSS 구현부 */
+.category_bar_item{
+    display:flex;
+    align-items:center;
+    font-family: 'NanumSquare', sans-serif;
+    font-size:1.40625vw;
+    color:#BDBDBD;
+    text-align: center;
+    justify-content: center;
+    z-index:1;
+    width: 13.54166666666667vw;
+    height: 4.11458333333333;
+    white-space: nowrap;
+}
+/* .category_bar_item:nth-child(1){
+}
+.category_bar_item:nth-child(2){
+    
+    width: 260px;
+    height: 79px;
+} */
+.category_bar_item:hover{
+    color: #7332FF;
+    transition: all 0.15s ease-in-out;
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    height:100%;
+}
+.main_content{
+    /* flex:1; */
+}
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+footer{
+    display: flex;
+    flex-direction: column;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+.footer {
+    margin-top: auto;
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+
+}
+.footer_second_page_only{
+    font-size: 0.57291666666667vw;
+    background-color:#BDBDBD;
+    color: white;
+    white-space: nowrap;
+    display:flex;
+    text-align: center;
+    align-items:center;
+    margin: 0;
+    justify-content: center;
+    /* width:100vw; */
+    /* min-height: 8.666vw; */
+    padding: 35px 0;
+    line-height: 1rem;
+}
+
+.footer_common{
+    background-color:#000000;
+    color: white;
+    white-space: nowrap;
+    /*width:100vw;
+     margin-top: auto; */
+   display: flex; 
+   min-height: 4.16666666666667vw; 
+   flex-direction:row;
+   align-items:center;
+   justify-content: flex-end;
+    padding-right: 3vw;
+
+}
+#company_name {
+    font-size: 0.83333333333333vw;
+    padding-right: 10px;
+
+}
+
+    
+
+#email_adress{
+    font-size: 0.57291666666667vw;
+
+} 
+@media screen and (max-width: 768px){
+
+    body{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        margin:0;
+        overflow: visible;
+        overflow-x: hidden;
+        /* height:150vh; */
+    
+    }
+    .category_bar_item{
+        /* top: 160px; */
+        /* left: 140px; */
+        display:flex;
+        align-items:center;
+        font-family: 'NanumSquare', sans-serif;
+        font-size: 0.9rem;
+        color:black;
+        text-align: center;
+        justify-content: center;
+        z-index:1;
+        width:13.541%;
+        height: 6.0909%;
+
+        padding:3.855% 3.4545% ;
+        white-space: nowrap;
+    }
+    
+    .category_bar{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items:center;
+        background-color: #ffffff;
+        width: 86.302%;
+        margin-top: 2.2336%;
+        height:auto;
+        padding: 0;
+
+
+    }
+
+    .content_box{
+        background-color: #F4F4F4;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        flex-basis:content;
+
+    }
+
+
+    .academy_list{
+        /* 웹이랑 다름 웹의 width는 87vw */
+        width: 60vw;
+        flex-direction: row;
+        text-align: center;
+        align-items: flex-start;
+        justify-content: center;
+        /* margin: 0 auto; */
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #F4F4F4;
+
+    }
+    .academy_list_item{
+        margin: 4px;
+        display: flex;
+        align-items:center;
+        justify-content: flex-start;
+        flex-direction: column;
+        flex-grow: 0;
+        margin-top:2.7173vh;
+        padding: 0px;
+        background-color: #FFFFFF;
+
+    }
+
+    .image{
+        vertical-align: top;
+  
+
+    }
+    .title{
+    
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 800;
+        /* order:1; */
+        color:#000000;
+
+    }
+    #term{
+   
+        font-size: 16px;
+        color: #424242;
+        /* order:1; */
+
+
+    }
+
+    #toggle_button{
+        background-color: transparent;
+        border:none;
+        width:36px;
+        height: 36px;
+        cursor: pointer;
+        padding: 0%;
+        margin-left: 57px;
+        transform: rotate( 180deg );
+    }
+
+    .short_content{
+        display:flex;
+        flex-direction: column;
+        align-items: space-between;
+        /* padding: 4px; */
+        justify-content: center;
+    }
+    .short_content{
+ 
+        font-display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .price{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        min-width: 141px;
+    }
+    #normal_price{
+        color:#949494;
+    }
+    #dicount_price{
+        color:#000000;
+    }
+    .detail_content{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin : 15px;
+        padding: 0px;
+        color: #616161;
+    }
+    strong{
+        color:#000000;
+
+    }
+    .contour_line{
+        border: 1px solid #E0E0E0;
+        background-color: #E0E0E0;
+        position: relative;
+        width: 240px;
+        margin-bottom: 17px;
+
+    }
+    li{
+        list-style:none;
+        padding-left:0px;
+        padding-bottom: 18px;
+        flex-basis: 40%;
+        order:1;
+        /* text-align: left; */
+    }   
+    a{
+        text-decoration: none;
+        margin:0;
+        padding:0;
+    }
+
+    .detail_content{
+        display: flex;
+        flex-direction: row;
+        min-width: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin: 0;
+        align-items: flex-start;
+    }
+    .detail_content_subtitle{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-right:21px;
+/* 추가한부분 */
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 0;
+        font-size: 14px;
+        color: #000000;
+        font-weight: 800;
+
+
+
+    }
+
+    .detail_content_describe{
+        display: flex;
+        flex-direction: column;
+        padding:0;
+        max-width: 140px;
+        font-size: 14px;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+    }
+
+
+    .short_content_wrapper{
+        padding-top:8px;
+    }
+
+
+/* 미디어 쿼리 footer 구현부 시작지점 */
+ .footer_second_page_only{
+
+    /* padding: 8.666vw; */
+    width: 100%;
+    line-height: 1rem;
+    font-size: 0.75rem;
+    }   
+    .footer_common{
+        padding: 4.16666666666667vw;
+    }
+
+    .academy_list{
+        background-color: black;
+    }
+
+    .content_box{
+        background-color: black;
+    }
+
+    #company_name{
+        font-size: 0.75rem;
+    }
+
+    #email_adress{
+        font-size: 0.7rem;
+    }
+    /* .footer_wrap {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .footer {
+        margin-top: auto;
+        font-family: 'NanumSquare', sans-serif;
+        z-index: 2;
+        width: 100vw;
+
+        background-color: #101011;
+
+
+
+    }
+   
+
+    
+        display: flex; 
+        flex-direction:row;
+        align-items:center;
+        justify-content: center;
+        background-color:#000000;
+        color: white;
+        white-space: nowrap;
+        min-height: 80px; 
+        width:100%;
+    } */
+
+} 

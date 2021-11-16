@@ -1,0 +1,18 @@
+.community_content{
+    position:relative;
+    width: 1640px;;
+
+    display:grid;
+    background-color: blue;
+    grid-template-columns: repeat(6,minmax(260px,auto));
+    grid-template-rows: repeat(2,minmax(280px,auto));
+
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+.community_content_box{
+    /* display:grid; */
+    background-color: beige;
+
+}

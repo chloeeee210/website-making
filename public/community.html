@@ -1,64 +1,350 @@
 <!doctype html>
 <html>
+<!-- <div class="wrap"> -->
+<!-- <section class="main_content"> -->
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport">
-    <link rel="stylesheet" type="text/css" href="menu_bar.css" />
-    <link rel="stylesheet" type="text/css" href="community_body.css" />
-    <link rel="stylesheet" type="text/css" href="community_footer.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="nav_bar.css" />
+    <link rel="stylesheet" type="text/css" href="community.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="community_footer.css" />
+    <link rel="stylesheet" type="text/css" href="community_category_bar.css" /> -->
 
     <!--제목 확정되면 고치기-->
-    <title>코딩이란</title>
+    <title>Devflo</title>
 
-    <div class="navbar">
+
+    <nav class="navbar">
         <div class="navbar_logo">
-            <!--TODO 임의의 하이퍼링크 naver 고치기 HOW? 다른 HTML파일과 연결되게-->
-            <!--TODO 클래스명 = logo, h1태그의 "코딩이란" 고치기 -> 웹사이트 명으로 -->
-            <!--TODO 클래스명 = logo, h2태그의 "What is coding" 고치기 -> 웹사이트 명으로 -->
-
-            <div id="logo">
-                <a href="https://www.naver.com/">
-                    <h1>코딩이란?</h1>
-                    <h2>what is coding?</h2>
-                </a>
-            </div>
+            <!-- <div id="logo"> -->
+            <a href="home.html">
+                <h1 id="logo_company_name">Devflo</h1>
+                <h2 id="logo_company_eng_name">Devflo</h2>
+            </a>
+            <!-- </div> -->
         </div>
-
-        <ul class="navbar_menu" alt="container">
-            <!--TODO 임의의 하이퍼링크 naver 고치기 HOW? 다른 HTML파일과 연결되게 -->
-            <a href="https://www.naver.com/"><div class="item"><li>홈</li></div></a>
-            <a href="https://www.naver.com/"><div class="item"><li>학원</li></div></a>
-            <a href="https://www.naver.com/"><div class="item"><li>커뮤니티</li></div></a>
-            <a href="https://www.naver.com/"><div class="item"><li>뉴스</li></div></a>
-            <a href="https://www.naver.com/"><div class="item"><li>유튜브ㆍ블로그</li></div></a>
+        <!-- EXPLAIN class name : abbrivation of navigation bar  -->
+        <ul class="navbar_menu">
+            <a href="home.html">
+                <li class="navbar_item">홈</li>
+            </a>
+            <a href="academy.html">
+                <li class="navbar_item">학원</li>
+            </a>
+            <a href="community.html">
+                <li class="navbar_item">커뮤니티</li>
+            </a>
+            <a href="news.html">
+                <li class="navbar_item">뉴스</li>
+            </a>
+            <a href="youtube.html">
+                <li class="navbar_item">유튜브ㆍ블로그</li>
+            </a>
         </ul>
-    </div>
+    </nav>
 
 </head>
 
 <body>
+    <!-- <div class="community_content"> -->
     <div class="category_bar" alt="container">
-        <a href="/온라인/"><div class="category_bar_item">온라인</div></a>
-        <a href="/오프라인/"><div class="category_bar_item">오프라인</div></a>
+        <a href="/온라인/" class="category_bar_item">온라인</a>
+        <a href="/오프라인/" class="category_bar_item">오프라인 </a>
 
     </div>
+    <div class="content_box">
+        <ul class="academy_list">
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_1.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+                    </div>
+
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+
+
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+
+                </div>
+                <div class="contour_line"></div>
+
+                <div class="detail_content">
+                    <ul class="detail_content_subtitle">
+                        <li class="sub_content">기간</li>
+                        <li class="sub_content">비용</li>
+                        <li class="sub_content">커리큘럼</li>
+                        <li class="sub_content">비고</li>
+
+                        <!-- XXXXX 만약에 list 추가하게 되면.li CSS에 padding-bottom:18px로 준 값을 높이에 따라 늘어나게끔 바꾸어야 하는데 어떻게 할 지 생각해보기   -->
+                    </ul>
+                    <!-- describe:서술하다 라는 의미로 디테일 내용을 서술해주는 클래스여서 이름을 이렇게 지었습니다 -->
+                    <ul class="detail_content_describe">
+                        <li class="sub_content">7주</li>
+                        <li class="sub_content">119만원->78만 5천원</li>
+                        <li class="sub_content">코딩테스트</li>
+                        <li class="sub_content">상담신청시 코딩테스트 모의고사 응시권 제공, 수강생 6개월 밀착케어</li>
+
+                    </ul>
+
+
+
+                </div>
+            </li>
+            <!-- 1번째꺼 코드끝  -->
+
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_2.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+
+
+                    </div>
+
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+
+
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+
+                </div>
+                <!-- <div class="contour_line"></div>
+
+                <div class="detail_content">
+                    <ul class="detail_content_subtitle">
+                        <li class="sub_content">기간</li>
+                        <li class="sub_content">비용</li>
+                        <li class="sub_content">커리큘럼</li>
+                        <li class="sub_content">비고</li>
+
+                    </ul>
+                    <ul class="detail_content_describe">
+                        <li class="sub_content">7주</li>
+                        <li class="sub_content">119만원->78만 5천원</li>
+                        <li class="sub_content">코딩테스트</li>
+                        <li class="sub_content">상담신청시 코딩테스트 모의고사 응시권 제공, 수강생 6개월 밀착케어</li>
+
+                    </ul> -->
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_3.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+
+
+                    </div>
+
+                    <div class="short_content_wrapper">
+                        <div id="term">7주</div>
+                    </div>
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+
+                </div>
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_4.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+
+
+                    </div>
+
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+
+
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+
+                </div>
+
+                <!-- 3번째 ITEM 코드 끝 -->
+
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_5.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+
+
+                    </div>
+
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+
+
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+
+                </div>
+                <!-- 4번째 ITEM 코드 끝 -->
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_6.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+                    </div>
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+                </div>
+                <!-- 5번째 ITEM 코드 끝 -->
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_6.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+                    </div>
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+                </div>
+                <!-- 6번째 ITEM 코드 끝 -->
+
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_7.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+                    </div>
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+                </div>
+                <!-- 7번째 ITEM 코드 끝 -->
+            <li class="academy_list_item">
+                <a href="/이동할html/" class="non_margin_padding">
+                    <img class="academy_image" src="img/im_card_8.png">
+                </a>
+                <div class="short_content">
+                    <div class="short_content_wrapper">
+                        <a href="/이동할html/" class="non_margin_padding">
+                            <strong class="title">알고리즘잡스 코딩캠프</strong>
+                        </a>
+                    </div>
+                    <div class="short_content_wrapper">
+
+                        <div id="term">7주</div>
+                    </div>
+                    <div class="price">
+                        <span id="normal_price">249만원 -> </span><span id="discont_price">199만원</span>
+                        <button id="toggle_button"><img src="img/ic_up_arrow.svg"></button>
+
+                    </div>
+                </div>
+                <!-- 8번째 ITEM 코드 끝 -->
+
+
+
+
+
+    </div>
+    </li>
+    <!-- 2번째꺼 코드끝  -->
+
+
 
 
 
 </body>
+
 <footer>
-    <div class="footer_second_page_only">해당 학원에서 정정요청하시면 정정요청해드립니다. 
-            <br>다만 이 페이지는 객관적인 사실만 전달하고자 합니다.</br>
-            <br>이 페이지에는 리뷰라던지 주관적인 내용을 추가하지 않을 생각입니다.</br>
-            <br>업데이트 2020.08.15</br>
-    </div>
-    <div class="footer_common">
-        <div class="company_name">What is Coding?</div>
-        <div class="email">문의 및 정보 요청 : whatiscoding2020@google.com</div>
+    <div class="footer">
+        <div class="footer_second_page_only">
+            해당 학원에서 정정요청하시면 정정요청해드립니다.
+            <br>다만 이 페이지는 객관적인 사실만 전달하고자 합니다.
+            </br>이 페이지에는 리뷰라던지 주관적인 내용을 추가하지 않을 생각입니다.
+            <br>업데이트 2020.08.15
+        </div>
+        <div class="footer_common">
+            <span id="company_name">What is Coding?</span>
+            <span id="email_adress">문의 및 정보 요청 : whatiscoding2020@google.com</span>
+        </div>
     </div>
 
 </footer>
+
+
+
+
 
 </html>

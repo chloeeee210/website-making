@@ -1,92 +1,57 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-
+/* footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    
+} */
 .footer_common{
-    position: absolute;
+    margin: 0 auto;
     background-color:#000000;
     color: white;
     white-space: nowrap;
-    display:flex;
-    text-align: center;
+    width: 100vw;
+    display: flex; 
+    min-height: 4.16vw; 
+    flex-direction:row;
+    /*margin-top: auto;
+     text-align: center; */
     align-items:center;
-    margin: 0;
-    /* justify-content: flex-end; */
-    top: 6228px;
-    left: 0px;
-    width: 1920px;
-    height: 80px;
+   justify-content: flex-end;
+
 }
-.company_name{
+#company_name{
     font-size: 16px;
     padding-right: 10px;
     
 }
-.email{
+#email_adress{
     font-size: 11px;
+    padding-right:144px;
 }
-
-/* footer{
-    background-color: #000000;
-    position: absolute;
-    top: 6228px;
-    left: 0px;
-    width: 1920px;
-    height: 80px;
-    z-index: 0;
-    display : flex;
-    font-family: 'NanumSquare', sans-serif;
-    line-height: 80px;
-    text-align: right;
-}
-.company_name{
-    background-color: #000000;
-    position: absolute;
-    top: 6259px;
-    margin-left: 1382px;
-    width: 122px;
-    height: 18px;
-    text-align: center;    
-    color: #ffffff;
-    font-display: flex;
-    white-space: nowrap;
-    display:flex;
-    /* text-align: right; */
-
-    /* align-items:center; */
-    /* z-index:6; */
-    /* line-height: 80px; 
-}*/
     
-.company_name h1{
-    font-size: 16px;
+@media screen and (max-width: 768px){
+    
+    .footer_common{
+        justify-content: center;
+        min-height: 17.2224px;
+
+        background-color: #000000;
+
+    }
+    #company_name{
+        font-size: 0.75rem;
+        padding: 17.2224444px;
+        
+    }
+    #email_adress{
+        font-size: 0.7rem;
+        padding: 0px;
+    }
+
+
+
 
 }
-.e-mail_adress{
-    background-color: #000000;
-
-    position: absolute;
-    top: 6262px;
-    left: 1522px;
-    width: 254px;
-    height: 12px;
-    font-size: 11px;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    /* text-align: center;     */
-    color: #ffffff;
-    /* font-display: flex; */
-    /* z-index: 6; */
-    /* line-height: 80px; */
-    
-} 
-
-/* .item{
-    width:260px;
-    height:120px;
-    display:flex;
-    align-items:center;
-    font-family: 'NanumSquare', sans-serif;
-    font-size: 24px;
-    color:white;
-    text-align: center;
-} */ 

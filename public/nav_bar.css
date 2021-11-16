@@ -1,0 +1,143 @@
+/* 웹화면 CSS 구현부 viewport : 1920px*1024px */
+ .navbar{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+    max-width: 1920px;
+    /* min-height: 91.2px; */
+    background-color: rgb(0, 0, 0);
+    /* padding:8px 12px; */
+    width: 100%;
+    /* min-height:120px; */
+    /* position:fixed; */
+    z-index:4;
+    margin-top: 0;
+}
+.navbar_logo{
+
+    font-family: 'NanumSquare', sans-serif;
+    color:white;
+    white-space: nowrap;
+    padding: 0 28px;
+
+}
+
+
+#logo_company_name{
+    font-size:2.5rem;
+    margin-bottom:8px;
+    margin-top:0;
+
+
+}
+
+#logo_company_eng_name{
+    font-size:16px;
+    margin:0;
+    
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+.navbar_menu{
+    display:flex;
+    list-style: none;
+}
+
+
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+.navbar_item{
+    /* width: 260px;
+    height: 120px; 
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 16px;
+    align-items:center;*/
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 16px;
+    color:white;
+    /* padding:0.5rem; */
+    white-space: nowrap;
+    margin: 0%;
+    padding: 8px 60px;
+
+    /* flex-basis:33%; */
+}
+
+    @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+    @media screen and (max-width: 768px){
+        .navbar{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            width:100%;
+            justify-content: center;
+            font-family: 'NanumSquare', sans-serif;
+            
+            /* height:5%; */
+        }
+        .navbar_logo{
+           text-align: center;
+            
+        }
+    
+        #logo_company_eng_name{
+            margin:0%;
+            padding:1.5%;
+            white-space: nowrap;
+            font-size : 0.7rem;
+        }
+        #logo_company_name{
+            margin:0%;
+            padding:1.5%;
+            white-space: nowrap;
+            font-size:1.5rem;
+        }
+        .navbar_menu{
+            /* flex-direction: column; */
+            flex-direction: row;
+            align-items: center;
+            min-width:30%;
+            justify-content: center;
+            margin: 0%;
+            padding:0 1% 0.2%;
+    
+        }
+    
+        .logo #homepage_title{
+            margin:0px;
+            white-space: nowrap;
+            text-align: center;
+    
+            /* font-size: 0.5rem; */
+    
+        }
+    
+        .logo #homepage_title_engname{
+            text-align: center;
+        }
+    
+        .category_bar{
+            width: 100%;
+            
+        }
+
+        .navbar_item{
+
+            font-size: 1rem;
+            color:white;
+            padding:0.5rem;
+            white-space: nowrap;
+            margin: 0%;
+            /* padding: 0% 2%; */
+
+            
+
+        }
+    
+    
+    }
