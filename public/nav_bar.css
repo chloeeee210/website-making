@@ -13,13 +13,25 @@
     /* position:fixed; */
     z-index:4;
     margin-top: 0;
+    /* safe area */
 }
+    
+
+
+
+
+ 
+
 .navbar_logo{
 
     font-family: 'NanumSquare', sans-serif;
     color:white;
     white-space: nowrap;
     padding: 0 28px;
+    flex-grow:0.5;
+    text-align:center;
+    /* display:flex; */
+
 
 }
 
@@ -45,6 +57,7 @@ a{
 .navbar_menu{
     display:flex;
     list-style: none;
+    flex-grow:2;
 }
 
 
@@ -82,6 +95,7 @@ a{
         }
         .navbar_logo{
            text-align: center;
+
             
         }
     

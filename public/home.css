@@ -1,6 +1,5 @@
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 
- 
 body{
     margin:0;
     font-family: 'NanumSquare', sans-serif;
@@ -10,15 +9,25 @@ body{
     overflow-x: hidden;
     overflow-y:visible;
     height:auto;
+
+    padding-top: env(safe-area-inset-top, 12px);
+    padding-right: env(safe-area-inset-right, 12px);
+    padding-bottom: env(safe-area-inset-bottom, 12px);
+    padding-left: env(safe-area-inset-left, 12px);
+
+    /* padding-top: constant(safe-area-inset-top); iOS 11.0 */
+    /*padding-top: env(safe-area-inset-top);  iOS 11.2 */ 
     /* width: 100vw; */
     /* border: #7332FF 4px solid; */
     
 
+    
 }
+
 /* 좌측사이드바구현부 */
 
 .circle {
-    position: absolute;
+    /* position: absolute; */
    /* position: fixed; */
      /* top: calc (180px / 1920 * 100);
     left: 2.60416666666667vw; 
@@ -31,11 +40,49 @@ body{
     background-color: #BDBDBD;
     white-space: nowrap ;
     z-index: 5;
+    border:none;
+
 
     /* margin :  1.83333333333333vw 0; */
 
 
 }
+.circle:focus{
+    background-color:#7332FF;
+}
+
+
+.circle:hover {
+    background-color: #7332FF;
+    /* 변화 줄 property value 천천히 */
+    /* property에 background-color를 입력하면 transition이 적용되지 않아서 all로 작성함 */
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+.circle_content_list:hover{
+    color: #7332FF;
+    transition: all 0.1s ease-in-out;
+
+}
+
+.circle_content_list:focus{
+    background-color: #BDBDBD;
+    color:#7332FF;
+    /* z-index: 5; */
+    
+}
+.circle_content_list{
+    vertical-align: top;
+    font-size: 12px;
+    padding-left:20px;
+    font-weight: bold;
+    color: #525252;
+    /* background-color: #cbbceb; */
+    font-family:'NanumSquare';
+    
+    }
 
 .circle_list{
     display:flex;
@@ -59,89 +106,17 @@ body{
 .side_bar_vertical_line{
     position: absolute;
     border-left: 1.5px solid #BDBDBD;
-    height: 120px;
+    height: 110px;
     /* margin-left: 7vw; */
     /* padding-top: -4vw; */
     /* overflow: hidden; */
     
 }
 
-.circle_content_list{
-    font-size: 12px;
-    padding-left:20px;
-    font-weight: bold;
-    color: #525252;
-    
-    }
 li{
     list-style: none;
 }
 
-/* 
-.circle--second{
-    margin-top: 3.125vw;
-
-}
-.circle--third {
-    margin-top: 6.25vw;
-}
-
-.circle--fourth {
-    margin-top: 9.375vw;
-} */
-
-/* .circle_list{
-    display:flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-}
-
-.circle_content_list{
-    flex-wrap: wrap;
-} */
-/* 좌측 사이드 바 목차 텍스트 */
-/* .circle_content{
-    left: 4.16666666666667vw;
-    white-space: wrap;
-    color:#BDBDBD;
-    font-weight: 600;
-    z-index: 5;
-    font-size: 0.83333333333333vw;
-    padding: 1.83333333333333vw 0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.circle_content--second{
-    padding: 1.83333333333333vw 0;
-
-}
-
-.circle_content--third{
-    padding: 1.83333333333333vw 0;
-
-    
-}
-.circle_content--fourth{
-    padding: 1.83333333333333vw 0;
-    width:7.14583333333333vw;
-
-} */
-
-.circle:hover {
-    background-color: #7332FF;
-    /* 변화 줄 property value 천천히 */
-    /* property에 background-color를 입력하면 transition이 적용되지 않아서 all로 작성함 */
-    transition: all 0.1s ease-in-out;
-}
-.circle_content:hover{
-    color: #7332FF;
-    transition: all 0.1s ease-in-out;
-
-}
 
 #side_bar_line{
     position:relative;
@@ -198,6 +173,7 @@ li{
     align-items: flex-start;
     padding-top:15.2vw;
     margin-left :20vw;
+    z-index:1;
     /* align-self: center; */
     /* padding-top:19%;
     margin-left:-12vw; */
@@ -221,7 +197,7 @@ li{
     justify-content: flex-start;
     align-items: flex-start;
     margin-left:-20vw;
-
+    z-index:0;
 
 }
 
@@ -309,6 +285,7 @@ head{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    z-index:2;
 
     
 }
@@ -338,20 +315,32 @@ head{
     
 }
 
-#second_page_text_content h3{
+    #second_page_text_content h3{
     
     /* font-family: 'NanumSquareRound',sans-serif; */
     color:#525252;
     font-size: 1.0416vw;
+    /* unicode-range: U+AC00-D7AF;
+    font-family: 'Nanum Gothic', 'cwTeXHei'; */
+
     padding: 0%;
     /* word-break : keep-all; */
     
+}
+
+:lang(zh) {
+    font-family:'nanumGothic', sans-serif;
+    font-size: 0.9vw;
 
 }
+
+
+
 /* 3rd page */
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 .third_page{
     font-family: 'NanumSquare', sans-serif;
+    margin-top:-22%;
      /* display:flex; */
     /*flex-direction: row;
     align-items: center;
@@ -388,8 +377,8 @@ head{
     font-size: 1.6vw;
     /* padding: 57.80767637102234%; 
     white-space: nowrap;*/
-    margin-top: -33%;
-    margin-left: -30vw;
+    margin-top: 23%;
+    margin-left: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -426,7 +415,7 @@ head{
 
 /* 4th page */
 @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
-#fourth_page{
+.fourth_page{
     font-family: 'NanumSquare', sans-serif;    
     display: flex;
     /* flex-direction: row;
@@ -438,6 +427,7 @@ head{
     background-size: 100% 100%; */
     margin-top: -5vw;
     margin-bottom: 8vw;
+    
 
 }
 /* #fourth_page_content{
@@ -803,26 +793,37 @@ height: 1689px;
     justify-self: last baseline;
     padding-bottom: 1.5625vw;
 }
+
+/* 디바이스를 가로로 돌렸을 때 간격 조정하는 코드 */
+@media screen and (max-width: 812px) and (min-width : 769px){
+
+    .navbar_item{
+        padding: 8px 40px;
+    }
+
+
+}
 @media screen and (max-width: 768px){
     body{
         overflow-x:hidden;
         line-height: 1rem;
         background-color: black;
-
+        overflow-x:hidden;
     }
     /* first-page구현부 */
     .side_bar{
-        display:none;
+        /* display:none; */
     }
 
-#first_page_wrapper{
+    #first_page_wrapper{
     margin-left:-20vw;
     opacity:0.7;
 }
 
-#first_page_text_content{
+    #first_page_text_content{
     margin-left:14vw;
     color:white;
+    z-index:1;
 }
 .first_page_title h1{
     font-size:1.1rem;
@@ -839,6 +840,8 @@ height: 1689px;
 /* second-page 구현부 */
 #second_page_wrapper{
     opacity:0.7;
+    z-index:2;
+
 }
 #second_page_text_content{
     width:53%;
@@ -927,7 +930,9 @@ font-size:0.9rem;
     font-size:1.1rem;
     }
     .fifth_page_text_content{
-    line-height:3rem;
+        justify-content: center;
+
+        line-height:3rem;
     }
     #fifth_page_title_explain{
             font-size:0.9rem;

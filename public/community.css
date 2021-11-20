@@ -24,6 +24,7 @@ body{
     justify-content: center;
     align-items: flex-start;
     Width:86%;
+    /* flex:1; */
 
 }
 
@@ -42,7 +43,7 @@ body{
     width:fit-content;
     display: flex;
     align-items:center;
-    justify-content: flex-start;
+    justify-content:flex-start;
     flex-direction: column;
     align-content: stretch;
     padding: 0px;
@@ -75,24 +76,49 @@ body{
 
 
 }
+/* #summary_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+} */
+details{
 
-#toggle_button{
-    background-color: transparent;
-    border:none;
+}
+
+.toggle_button:focus{
+    transform: rotate( 180deg );
+
+}
+/* 기본적으로 적용되는 화살표 없애는 코드 */
+details > summary:first-of-type {
+    list-style-type: none;
+}
+
+.toggle_button{
+    /* visibility: collapse; */
+    background-color: white;
     width:36px;
     height: 36px;
+    border:none;
     cursor: pointer;
-    /* background-color: aquamarine; */
     padding: 0%;
     margin-left: 57px;
-    transform: rotate( 180deg );
+    /* transform: rotate( 180deg ); */
+    background-image: url('img/ic_up_arrow.svg');
+     background-repeat: no-repeat;
+    background-color: #7332FF; 
+
+    /* background-color: aquamarine; */
 }
 
 .short_content{
+    
     display:flex;
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
+    flex-wrap: wrap;
+    padding: 4px;
 }
 .short_content{
  
@@ -111,6 +137,7 @@ body{
     min-width: 141px;
     flex-basis:40px;
     flex-grow:1;
+    cursor: pointer;
 
 }
 #normal_price{
@@ -119,7 +146,7 @@ body{
 #dicount_price{
     color:#000000;
 }
-.detail_content{
+/* .detail_content{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
@@ -127,7 +154,7 @@ body{
     margin : 15px;
     padding: 0px;
     color: #616161;
-}
+} */
 strong{
     color:#000000;
 
@@ -161,7 +188,7 @@ strong{
     flex-direction: row;
     min-width: 10px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     margin: 0;
     align-items: flex-start;
 }
@@ -169,7 +196,7 @@ strong{
 display:flex;
 flex-direction: column;
 flex-wrap: wrap;
-padding-right:21px;
+/* padding-right:21px; */
 /* 추가한부분 */
 justify-content: space-around;
 
@@ -177,8 +204,8 @@ padding-left: 0;
 font-size: 14px;
 color: #000000;
 font-weight: 800;
-flex-basis:40px;
-flex-grow:1;
+/* flex-basis:40px; 
+flex-grow:1;*/
 
 
 
@@ -196,6 +223,7 @@ flex-grow:1;
 }
 .short_content_wrapper{
     padding-top:8px;
+    width:240px;
 
 }
 
@@ -221,7 +249,7 @@ flex-grow:1;
     font-family: 'NanumSquare', sans-serif;
     font-size:1.40625vw;
     color:#BDBDBD;
-    text-align: center;
+    /* text-align: center; */
     justify-content: center;
     z-index:1;
     width: 13.54166666666667vw;
@@ -327,7 +355,7 @@ footer{
         font-family: 'NanumSquare', sans-serif;
         font-size: 0.9rem;
         color:black;
-        text-align: center;
+        /* text-align: center; */
         justify-content: center;
         z-index:1;
         width:13.541%;
@@ -410,7 +438,7 @@ footer{
 
     }
 
-    #toggle_button{
+    .toggle_button{
         background-color: transparent;
         border:none;
         width:36px;
@@ -450,7 +478,7 @@ footer{
     #dicount_price{
         color:#000000;
     }
-    .detail_content{
+    /* .detail_content{
         display:flex;
         flex-direction: column;
         align-items: flex-start;
@@ -458,7 +486,7 @@ footer{
         margin : 15px;
         padding: 0px;
         color: #616161;
-    }
+    } */
     strong{
         color:#000000;
 
@@ -477,7 +505,7 @@ footer{
         padding-bottom: 18px;
         flex-basis: 40%;
         order:1;
-        /* text-align: left; */
+        text-align: left;
     }   
     a{
         text-decoration: none;
@@ -490,7 +518,7 @@ footer{
         flex-direction: row;
         min-width: 10px;
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         margin: 0;
         align-items: flex-start;
     }
@@ -524,9 +552,9 @@ footer{
     }
 
 
-    .short_content_wrapper{
-        padding-top:8px;
-    }
+    /* .short_content_wrapper{
+    
+    } */
 
 
 /* 미디어 쿼리 footer 구현부 시작지점 */

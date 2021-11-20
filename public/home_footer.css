@@ -20,6 +20,9 @@
      text-align: center; */
     align-items:center;
    justify-content: flex-end;
+   /* padding을 5%로 설정한 이유 : 버튼을 눌렀을 때 스크롤이 끝까지 내려오게 하기 위해서 */
+   /* padding:5% 0; */
+
 
 }
 #company_name{
@@ -38,6 +41,7 @@
         justify-content: center;
         min-height: 17.2224px;
 
+        padding: 15px 0 calc(env(safe-area-inset-bottom) + 15px);
         background-color: #000000;
 
     }
