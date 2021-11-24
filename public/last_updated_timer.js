@@ -1,24 +1,26 @@
-// 일단돌아가는 똥코드
-const date = document.lastModified;
-var theDate=date.length-8;
-
+// 일단돌아가는 코드
+const theDate = document.lastModified;
+// var theDate=date.length-8;
+// document.write("last Modified:"+date.substring(theDate, 0));
 let footer = document.getElementsByClassName('footer');
 let secondOnly = document.getElementsByClassName('footer_second_page_only');
-var br = document.createElement('br');
-
-const text = document.createTextNode('마지막 업데이트 날짜 ')
-
-const timer = document.createTextNode(date);
+const strDate = theDate.split(" ")
+const  br = document.createElement('br');
+//!!!!!여기에 공백문자 있음(마지막 업데이트"공백")
+const text = document.createTextNode('마지막 업데이트 ')
+const timer = document.createTextNode(strDate[0]);
 
 
 secondOnly[0].appendChild(br);
-footer[0].appendChild(secondOnly[0]);
-
 secondOnly[0].appendChild(text);
+secondOnly[0].appendChild(timer);
+
 footer[0].appendChild(secondOnly[0]);
 
-secondOnly[0].appendChild(timer);
-footer[0].appendChild(secondOnly[0]);
+// footer[0].appendChild(secondOnly[0]);
+
+// footer[0].appendChild(secondOnly[0]);
+
 // 일단 돌아가는 똥코드 끝
 
 // var message=document.lastModified;

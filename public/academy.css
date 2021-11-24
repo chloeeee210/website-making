@@ -16,7 +16,7 @@ body{
 }
 
 
-.content_box+{
+.content_box{
     background-color: #F4F4F4;
     /* max-width:1657px; */
     display:flex;
@@ -25,8 +25,7 @@ body{
     align-items: flex-start;
     Width:86%;
     /* flex:1; */
-    min-height: 70vh;
-
+   min-height: 70vh;
 
 }
 
@@ -282,14 +281,14 @@ footer{
     display: flex;
     flex-direction: column;
     font-family: 'NanumSquare', sans-serif;
-}
-
-.footer {
     margin-top: auto;
     width:100vw;
     display: flex;
     flex-direction: column;
     max-width: 1920px;
+}
+
+.footer {
 
 }
 .footer_second_page_only{

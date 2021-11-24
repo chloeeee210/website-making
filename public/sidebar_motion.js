@@ -12,6 +12,7 @@ function scrollMove(pageNumber) {
         behavior: 'smooth'
     });
 
+}
 
     // let el = document.getElementsByClassName(".circle");
     
@@ -19,7 +20,6 @@ function scrollMove(pageNumber) {
 
         
 
-}
 //만들고 싶은 함수 !   
 
 //pageNumber가 second일때
