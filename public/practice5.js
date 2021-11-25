@@ -23,7 +23,52 @@ function makeElement(wrappedClassName, tagName, className, textInClass) {
     }
     wrappedClass[0].appendChild(element);
     classElement.push(className);
+
+
+// 문제 : CSS 적용이 안됨. 
+// 이유 : 클래스 명이 달라져서 / id 명이 달라져서 
+// CSS 문서에서 선택자로서 클래스명 / id명을 사용했기 때문에
+
+// 이유 2 : 왜 클래스 이름/ id이름을 바꾸었나?
+// 여러 개의 엘리먼트들을 만들고, 그 엘리먼트들을 부르는 다른 이름이 필요했기 떄문
+// 기존 클래스이름 + 1(번호를 부여해서) 구현함.
+
+
+
+// 해결 방법1 :  CSS선택자에 번호를 매기기
+// 클래스명 + 번호 를 선택자로 지정하면 해결되지 않을까?
+// 한계 : CSS에서는 배열, 반복문을 쓸 수 없음...CSS 전처리기는 낫 마이 레벨
+// 그리고 과제 목적과 벗어남(vanilla JS로 DOM,CSSOM 제어)
+
+// 해결 방법2 : CSS파일을 참조하는 함수를 만들기
+// 기존에 구현한 CSS파일과 JS파일의 공통점은 동일한 클래스명을 가지고 있다는 것임.(번호매기는 것이 다름)
+
+// 만들고 싶은 함수
+// CSS선택자를 매개변수로 받아서 CSS파일에 구현한 값을 가져오는 함수.
+
+// 일단 함수 선언
+// 매개변수는 clss이름이나 id명으로 설정
+// getElementByclassName 또는 querySelector로 선택자를 찾음 (근데 어디서? CSS파일에서)
     
+
+//    * 주의할 점* 적용 시 각 선택자에 배열로 만든 범위 숫자가 더해져야 CSS적용됨.
+//     흐름은
+//     CSS 파일에서 값 가져옴 -> 변수에 담고 -> 내가 구현한 element에 값을 적용함(appendCHild로)
+//     document.querySelector('.abc').style.cssText);
+
+    // var cssId = 'myCss';  // you could encode the css path itself to generate id..
+    // if (!document.getElementById(cssId))
+    // {
+    //     var head  = document.getElementsByTagName('head')[0];
+    //     var link  = document.createElement('link');
+    //     link.id   = cssId;
+    //     link.rel  = 'stylesheet';
+    //     link.type = 'text/css';
+    //     link.href = 'http://website.com/css/stylesheet.css';
+    //     link.media = 'all';
+    //     head.appendChild(link);
+    // }
+
 }
 
 function makeIdElement(wrappedClassName, tagName, idName, textInId) {
@@ -175,15 +220,3 @@ console.log(classElement[186]);//detail_content_describe143[186~193]
 console.log(classElement[194]);// subcontent[194~201]
 
 
-var cssSelectorName = className;  // you could encode the css path itself to generate id..
-if (!document.getElementById(cssSelectorName))
-{
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.id   = cssId;
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'http://website.com/css/stylesheet.css';
-    link.media = 'all';
-    head.appendChild(link);
-}

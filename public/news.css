@@ -39,8 +39,8 @@ body{
     flex-wrap: wrap;
     overflow-wrap: wrap;
     padding:0;
-/* } */
 }
+
 
 .category_bar{
     display:flex;
@@ -95,6 +95,7 @@ footer{
     display: flex;
     flex-direction: column;
     font-family: 'NanumSquare', sans-serif;
+    width:100%;
 }
 
 .footer {
