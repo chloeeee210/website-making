@@ -16,7 +16,7 @@ body{
 }
 
 
-.content_box+{
+.content_box{
     background-color: #F4F4F4;
     /* max-width:1657px; */
     display:flex;

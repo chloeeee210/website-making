@@ -72,50 +72,53 @@ function makeText(wrappedClassName, text) {
 }
 
 // item 8개 만들거임!
-for (i = 0; i < 8; i++) {
+// for (i = 0; i < 8; i++) {
+    
     makeElement(classElement[0], 'li', classElement[1]);
-}
+// }
     //1번째 item
     // makeElement  (classElement[0],'li',classElement[1]);
     {/*64th <a href="/이동할html/"> */ }
     makeElement(classElement[1], 'a', 'aInItem');
+
     // /*img class="academy_image" src="img/im_card_1.png">
-    makeImgElement(classElement[12], 'academy_image', 1);
-    {/* <div class="short_content"> */ }
+    makeImgElement(classElement[5], 'academy_image', 1);
+    // {/* <div class="short_content"> */ }
     makeElement(classElement[1], 'div', classElement[2]);
-    {/* <div class="short_content_wrapper"> */ }
-    makeElement(classElement[2], 'div', classElement[3]);
+    
+    // {/* <div class="short_content_wrapper"> */ }
+    // makeElement(classElement[2], 'div', classElement[3]);
 
-    /* HTML 69번째줄 <a href="/이동할html/" class="non_margin_padding"> */
-    makeElement(classElement[3], 'a', 'aInDiv');
-    // makeElement(classElement[])
-    // tittle스펠링일부러..틀림..
-    makeElement(classElement[16], 'strong', 'title');
-    makeText(classElement[17], '알고리즘잡스 코딩캠프')
+    // /* HTML 69번째줄 <a href="/이동할html/" class="non_margin_padding"> */
+    // makeElement(classElement[3], 'a', 'aInDiv');
+    // // makeElement(classElement[])
+    // // tittle스펠링일부러..틀림..
+    // makeElement(classElement[16], 'strong', 'title');
+    // makeText(classElement[17], '알고리즘잡스 코딩캠프')
 
-    makeElement(classElement[2], 'div', classElement[3] + 'sec');
-    makeIdElement(classElement[3] + 'sec', 'div', 'term', '7주');
-    makeElement(classElement[2], 'div', classElement[3] + 'third');
-    // makeText(classElement[20],'7주');
-    makeElement(classElement[3] + 'third', 'details');
-    makeElement(classElement[22], 'summary', 'sum');
-    makeElement(classElement[22], 'div', 'price');
-    makeIdElement(classElement[23], 'span', 'normal_price', '249만원 ->');
-    makeIdElement(classElement[23], 'span', 'discount_price', '199만원');
-    makeElement(classElement[23], 'span', 'toggle_button');
-    makeElement(classElement[21], 'div', 'contour_line');
-    makeElement(classElement[21], 'div', 'detail_content');
-    makeElement(classElement[28], 'ul', 'detail_content_subtitle');
-    makeElement(classElement[28], 'ul', 'detail_content_describe');
-    makeElement(classElement[29], 'li', 'sub_content', '기간');
-    makeElement(classElement[29], 'li', 'sub_content', '비용');
-    makeElement(classElement[29], 'li', 'sub_content', '커리큘럼');
-    makeElement(classElement[29], 'li', 'sub_content', '비고');
+    // makeElement(classElement[2], 'div', classElement[3] + 'sec');
+    // makeIdElement(classElement[3] + 'sec', 'div', 'term', '7주');
+    // makeElement(classElement[2], 'div', classElement[3] + 'third');
+    // // makeText(classElement[20],'7주');
+    // makeElement(classElement[3] + 'third', 'details');
+    // makeElement(classElement[22], 'summary', 'sum');
+    // makeElement(classElement[22], 'div', 'price');
+    // makeIdElement(classElement[23], 'span', 'normal_price', '249만원 ->');
+    // makeIdElement(classElement[23], 'span', 'discount_price', '199만원');
+    // makeElement(classElement[23], 'span', 'toggle_button');
+    // makeElement(classElement[21], 'div', 'contour_line');
+    // makeElement(classElement[21], 'div', 'detail_content');
+    // makeElement(classElement[28], 'ul', 'detail_content_subtitle');
+    // makeElement(classElement[28], 'ul', 'detail_content_describe');
+    // makeElement(classElement[29], 'li', 'sub_content', '기간');
+    // makeElement(classElement[29], 'li', 'sub_content', '비용');
+    // makeElement(classElement[29], 'li', 'sub_content', '커리큘럼');
+    // makeElement(classElement[29], 'li', 'sub_content', '비고');
 
-    makeElement(classElement[30], 'li', 'sub_content', '7주');
-    makeElement(classElement[30], 'li', 'sub_content', '119만원');
-    makeElement(classElement[30], 'li', 'sub_content', '코딩테스트');
-    makeElement(classElement[30], 'li', 'sub_content', '상담신청시 코딩테스트 모의고사 응시권 제공, 수강생 6개월 밀착케어');
+    // makeElement(classElement[30], 'li', 'sub_content', '7주');
+    // makeElement(classElement[30], 'li', 'sub_content', '119만원');
+    // makeElement(classElement[30], 'li', 'sub_content', '코딩테스트');
+    // makeElement(classElement[30], 'li', 'sub_content', '상담신청시 코딩테스트 모의고사 응시권 제공, 수강생 6개월 밀착케어');
 
 
 
@@ -124,30 +127,12 @@ console.log(classElement[1]);// academy_list_item
 console.log(classElement[2]);// short_content
 console.log(classElement[3]);// short_content_wrapper
 console.log(classElement[4]); //li academy_list_item
+
 console.log(classElement[5]); //li academy_list_item
+
 console.log(classElement[6]); //li academy_list_item
 console.log(classElement[7]); //li academy_list_item
 console.log(classElement[8]); //li academy_list_item
-console.log(classElement[9]); //li academy_list_item
+console.log(classElement[9]);//li academy_list_item
 console.log(classElement[10]);//li academy_list_item
-console.log(classElement[11]);//li academy_list_item
-console.log(classElement[12]); //a aInItem
-console.log(classElement[13]); //div academy_image
-console.log(classElement[14]); //div short_content
-console.log(classElement[15]); //div short_content_wrapper
-console.log(classElement[16]); //aInDiv
-console.log(classElement[17]); //title
-console.log(classElement[18]); //short_content_wrappersec
-console.log(classElement[19]); //term
-console.log(classElement[20]); //short_content_wrapperthird
-console.log(classElement[21]); //undefined
-console.log(classElement[22]); //sum
-console.log(classElement[23]); //price
-console.log(classElement[24]); //normal_price
-console.log(classElement[25]); //discount_price
-console.log(classElement[26]); //toggle_button
-console.log(classElement[27]); //contour_line
-console.log(classElement[28]); //detail_content
-console.log(classElement[29]); //detail_content_subtitle
-console.log(classElement[30]); //detail_content_describe
 
