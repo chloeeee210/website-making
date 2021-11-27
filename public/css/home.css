@@ -180,7 +180,7 @@ li{
 }
 
 #first_page_wrapper{
-    background-image: url('img/im_bg1.svg');
+    background-image: url('../img/im_bg1.svg');
     background-repeat: no-repeat;
     background-size: 61.35416666666667vw 72.23958333333333vw;
     background-position-x:15vw;
@@ -274,7 +274,7 @@ head{
 }
 
 #second_page_wrapper{
-    background-image: url('img/im_bg2.svg');
+    background-image: url('../img/im_bg2.svg');
     background-repeat: no-repeat;
     background-size: 72.708333vw 76.3020vw;
     height: 72.708333vw;
@@ -346,6 +346,7 @@ head{
     align-items: center;
     justify-content: center; */
     /* text-align: center; */
+    z-index: 3;
 }
 #third_page_content{
     margin-top: -23vw;
@@ -358,7 +359,7 @@ head{
 
 #third_page_wrapper{
     /* margin-top: -12%; */
-    background-image: url('img/im_bg3.svg');
+    background-image: url('../img/im_bg3.svg');
     background-repeat: no-repeat;
     background-size: 72.708333vw 76.3020vw;
     height: 72.708333vw;
@@ -722,7 +723,7 @@ height: 1689px;
 #fifth_page_wrapper{
     position:relative;
     /* margin-top: -12%; */
-    background-image: url('img/im_bg5.png');
+    background-image: url('../img/im_bg5.png');
     background-repeat: no-repeat;
     background-size:  100vw 56.40625vw;
     height: 56.40625vw;
@@ -794,6 +795,52 @@ height: 1689px;
     padding-bottom: 1.5625vw;
 }
 
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+/* footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    
+} */
+.footer_common{
+    margin: 0 auto;
+    background-color:#000000;
+    color: white;
+    white-space: nowrap;
+    width: 100vw;
+    display: flex; 
+    min-height: 4.16vw; 
+    flex-direction:row;
+    /*margin-top: auto;
+     text-align: center; */
+    align-items:center;
+   justify-content: flex-end;
+   /* padding을 5%로 설정한 이유 : 버튼을 눌렀을 때 스크롤이 끝까지 내려오게 하기 위해서 */
+   /* padding:5% 0; */
+
+
+}
+#company_name{
+    font-size: 16px;
+    padding-right: 10px;
+    
+}
+#email_adress{
+    font-size: 11px;
+    padding-right:144px;
+}
+    
+/* @media screen and (max-width: 768px){
+    
+    
+
+
+
+
+} */
+
 /* 디바이스를 가로로 돌렸을 때 간격 조정하는 코드 */
 @media screen and (max-width: 812px) and (min-width : 769px){
 
@@ -812,7 +859,7 @@ height: 1689px;
     }
     /* first-page구현부 */
     .side_bar{
-        /* display:none; */
+        display:none;
     }
 
     #first_page_wrapper{
@@ -877,7 +924,7 @@ height: 1689px;
     width:60%;
     word-break:keep-all;
     color:white;
-    margin-top:-13vw;
+    margin-top:22vw;
 }
 
 #third_page_title h1{
@@ -958,4 +1005,21 @@ font-size:0.9rem;
         #email_adress{
             font-size: 0.7rem;
         } */
+    }
+    .footer_common{
+        justify-content: center;
+        min-height: 17.2224px;
+
+        padding: 15px 0 calc(env(safe-area-inset-bottom) + 15px);
+        background-color: #000000;
+
+    }
+    #company_name{
+        font-size: 0.75rem;
+        padding: 17.2224444px;
+        
+    }
+    #email_adress{
+        font-size: 0.7rem;
+        padding: 0px;
     }

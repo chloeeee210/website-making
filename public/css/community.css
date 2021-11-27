@@ -23,7 +23,7 @@ body{
     flex-direction:column;
     justify-content: center;
     align-items: flex-start;
-    Width:86%;
+    Width:80%;
     /* flex:1; */
     min-height: 70vh;
 
@@ -35,10 +35,11 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content:center;
+    justify-content:flex-start;
     flex-wrap: wrap;
     overflow-wrap: wrap;
     padding:0;
+    /* width:100%; */
 }
 .academy_list_item{
     margin: 4px;
@@ -106,7 +107,7 @@ details > summary:first-of-type {
     padding: 0%;
     margin-left: 57px;
     /* transform: rotate( 180deg ); */
-    background-image: url('img/ic_up_arrow.svg');
+    background-image: url('../img/ic_up_arrow.svg');
      background-repeat: no-repeat;
     background-color: #7332FF; 
 

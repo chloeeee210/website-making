@@ -15,7 +15,7 @@ secondOnly[0].appendChild(br);
 secondOnly[0].appendChild(text);
 secondOnly[0].appendChild(timer);
 
-footer[0].appendChild(secondOnly[0]);
+// footer[0].appendChild(secondOnly[0]);
 
 // footer[0].appendChild(secondOnly[0]);
 
