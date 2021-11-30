@@ -1,13 +1,22 @@
 # [website-making]devflo directory tree
-C:\USERS\이름\DESKTOP\DEVFLO
 
 ```
+C:\USERS\이름\DESKTOP\DEVFLO
 |   app.js
 |   main.js
 |   ngrok.exe
 |   package-lock.json
 |   package.json
+|   README.md
 |
++---devflo_시연영상
+|       [chloe]1.홈.mp4
+|       [chloe]2.홈_사이드바.mp4
+|       [chloe]3.홈_자세히보기.mp4
+|       [chloe]4.홈_모바일.mp4
+|       [chloe]5.홈화면_모바일_사이즈_줄어들때_경고창.mp4
+|       [chloe]6.커뮤니티.mp4
+|       [chloe]7.커뮤니티_모바일.mp4
 |
 +---private
 |   +---DOM_making_practice
@@ -44,6 +53,7 @@ C:\USERS\이름\DESKTOP\DEVFLO
 \---public
     |   academy.html
     |   community.html
+    |   detail.html
     |   home.html
     |   news.html
     |   package-lock.json
@@ -55,6 +65,7 @@ C:\USERS\이름\DESKTOP\DEVFLO
     |       #home_footer.css
     |       #nav_bar_community.css
     |       community.css
+    |       detail.css
     |       home.css
     |       nav_bar.css
     |
@@ -89,7 +100,7 @@ C:\USERS\이름\DESKTOP\DEVFLO
     |       scroll.js
     |       sidebar_motion.js
     |       size_reduce_popup.js
-```
+   ``` 
 
 ***
 
