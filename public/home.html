@@ -18,18 +18,33 @@
     <!-- <meta name='viewport' content='initial-scale=1,viewport-fit="cover"> -->
     <meta charset="UTF-8">
     <!--EXPLAIN CSS 파일 불러오기 -->
-    <link rel="stylesheet" type="text/css" href="../css/nav_bar.css" />
-    <link rel="stylesheet" type="text/css" href="../css/home.css" />
+    <!-- JS용 경로 -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/nav_bar.css" /> -->
+    <!-- html용 경로 -->
+    <link rel="stylesheet" type="text/css" href="./css/nav_bar.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="../css/home.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+
     <!-- <link rel="stylesheet" type="text/css" href="http://localhost:3000/css/home.css" /> -->
 
-    
-    <!-- <link rel="stylesheet" type="text/css" href="../css/home_footer.css" /> -->
 
+    <!-- <link rel="stylesheet" type="text/css" href="../css/home_footer.css" /> -->
+    <!-- 
     <script type="text/javascript" src="../js_motion/sidebar_motion.js"></script>
-    <script type="text/javascript" src="../js_motion/size_reduce_popup.js" async></script>
+    <script type="text/javascript" src="../js_motion/size_reduce_popup.js" async></script> -->
+
+    <!-- html용경로 -->
+    <script type="text/javascript" src="./js_motion/sidebar_motion.js"></script>
+    <script type="text/javascript" src="./js_motion/size_reduce_popup.js" async></script>
 
 
     <!--TODO 이름 바꾸기-->
+</head>
+
+
+<body>
+
     <title>Devflo</title>
     <nav class="navbar">
 
@@ -59,9 +74,7 @@
             </a>
         </ul>
     </nav>
-</head>
 
-<body>
 
     <!--EXPLAIN CSS 상속하려다가 실패해서 남겨놓은 클래스 content = 내용이라는 뜻으로 씀-->
     <div class="content">
@@ -105,7 +118,7 @@
                         <button class="circle" onclick="scrollMove('fifth')">
 
 
-                            <li class=circle_content_list>코딩이란?의 목적</li>
+                            <li class=circle_content_list>Devflo의 목적</li>
                     </div>
 
                 </ul>
@@ -120,11 +133,11 @@
             <!-- 1,2,3,4면 디자인 파일 명 바꾸기... -->
             <section id="first_page_text_content">
                 <div class="first_page_title">
-                    <h1>코딩이란?</h1>
-                    <h2>What is Coding?</h2>
+                    <h1>Devflo란?</h1>
+                    <!-- <h2></h2> -->
                 </div>
                 <!--TODO 하이퍼링크 수정하기 -->
-                <a href="https://www.naver.com/">
+                <a href="detail.html">
                     <div class="first_page_title_detail">자세히 보러가기</div>
                 </a>
             </section>
@@ -176,10 +189,13 @@
             </div>
         </div>
         <!-- 3번째 페이지와 4번째 페이지를 이어주는 선 -->
-        <img src="../img/third_page_line_img.svg" id="third_page_line_img" alt="보라색 선">
+        <img src="./img/third_page_line_img.svg" id="third_page_line_img" alt="보라색 선">
+        <!-- <img src="./img/third_page_line_img.svg" id="third_page_line_img" alt="보라색 선"> -->
+
         <!-- 4번째 페이지 구현부 -->
         <div class="fourth_page">
-            <img src="../img/im_bg4.svg" id="fourth_page_bg_img" width="100%" height="100%">
+            <!-- <img src="../img/im_bg4.svg" id="fourth_page_bg_img" width="100%" height="100%"> -->
+            <img src="./img/im_bg4.svg" id="fourth_page_bg_img" width="100%" height="100%">
 
 
             <div class="fourth_page_content">
@@ -188,7 +204,7 @@
                     <h1>개발자 종류</h1>
                     <!-- <div id = "nested_img_wrapper"> -->
 
-                    <img id="fourth_page_line_img" src="../img/im_line_title.svg"
+                    <img id="fourth_page_line_img" src="./img/im_line_title.svg"
                         alt="보라색 제목 표시줄 title line which color is purple">
                     <!-- </div> -->
                     <div class="buttons">
@@ -246,7 +262,7 @@
                 <div id=fifth_page_wrapper>
                     <section class="fifth_page_text_content">
                         <div id="fifth_page_title">
-                            <h1>‘코딩이란?’의 목적</h1>
+                            <h1>‘Devflo’의 목적</h1>
                         </div>
                         <div id="fifth_page_title_explain">
                             한 번에 개발자에 대한 정보를 얻을 수 있는 통로가 되기 위해서 만든 사이트입니다.
@@ -280,8 +296,8 @@
 <footer>
     <div class="footer">
         <div class="footer_common">
-            <span id="company_name">What is Coding?</span>
-            <span id="email_adress">문의 및 정보 요청 : whatiscoding2020@google.com</span>
+            <span id="company_name">Devflo</span>
+            <span id="email_adress">문의 및 정보 요청 : devflo2020@google.com</span>
         </div>
 
     </div>

@@ -13,6 +13,7 @@
     /* position:fixed; */
     z-index:4;
     margin-top: 0;
+
     /* safe area */
 }
     
@@ -90,6 +91,8 @@ a{
             width:100%;
             justify-content: center;
             font-family: 'NanumSquare', sans-serif;
+            padding : 15px 0 calc(env(safe-area-inset-bottom) + 15px);
+
             
             /* height:5%; */
         }

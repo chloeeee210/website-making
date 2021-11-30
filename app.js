@@ -25,7 +25,7 @@ app.listen(port, function() {
 app.get('/', function(req,res) {
     //__dirname은 현재 디렉토리를 참조한다는 뜻(directory name)
     //HTTP 응답을 전송한다. body 파라미터는 Buffer 객체, String, 객체, 배열 등이 될 수 있다.
-    res.sendFile(__dirname + "/public/html/home.html")
+    res.sendFile(__dirname + "/public/home.html")
 })
 
 // localhost:3000/main 브라우저에 res.sendFile() 내부의 파일이 띄워진다.
