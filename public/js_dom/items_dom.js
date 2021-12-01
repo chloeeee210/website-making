@@ -1,5 +1,9 @@
-
+//
 const parentEle = document.querySelector('.academy_list');
+
+// 변수할당..해서 써주면 좋음 그냥 9가아니라 
+//url상수로 바꿔주기 이파일에서 쓸거같으면 그냥 상수로 선언하기
+
 for (let i = 1; i < 9; i++) {
     // 아이템 생성
     const wrap = document.createElement('li');
@@ -92,7 +96,7 @@ for (let i = 1; i < 9; i++) {
             const detailContentSubtitle = document.createElement('ul');
             detailContentSubtitle.classList.add('detail_content_subtitle');
             detailContent.appendChild(detailContentSubtitle);
-
+            //XXX 깔끔하지않은 코드 개선해야 함. 
             for (let i = 1; i < 5; i++) {
                 const subContent = document.createElement('li');
                 subContent.classList.add('sub_content');
@@ -120,6 +124,7 @@ for (let i = 1; i < 9; i++) {
             const detailContentDescribe = document.createElement('ul');
             detailContentDescribe.classList.add('detail_content_describe');
             detailContent.appendChild(detailContentDescribe);
+            //XXX 깔끔하지않은 코드 개선해야 함. 
 
             for (let i = 1; i < 5; i++) {
                 const subContent = document.createElement('li');

@@ -3,6 +3,7 @@ const theDate = document.lastModified;
 // var theDate=date.length-8;
 // document.write("last Modified:"+date.substring(theDate, 0));
 let footer = document.getElementsByClassName('footer');
+//XXX fixme second_only-> HTML CSS JS다고치기
 let secondOnly = document.getElementsByClassName('footer_second_page_only');
 const strDate = theDate.split(" ")
 const  br = document.createElement('br');
@@ -14,6 +15,7 @@ const timer = document.createTextNode(strDate[0]);
 secondOnly[0].appendChild(br);
 secondOnly[0].appendChild(text);
 secondOnly[0].appendChild(timer);
+
 
 // footer[0].appendChild(secondOnly[0]);
 
